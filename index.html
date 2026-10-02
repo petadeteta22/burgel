@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Agropecuária Burgel</title>
+<meta name="description" content="Agropecuária Burgel: a história da família de Pedro Alfredo e Livani Ioris Burgel, de Não-Me-Toque a Cachoeira do Sul e Chapadão do Sul.">
+<meta name="theme-color" content="#0c1411">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2030%2030%22%3E%3Crect%20width%3D%2230%22%20height%3D%2230%22%20rx%3D%227%22%20fill%3D%22%2316231b%22/%3E%3Cline%20x1%3D%2215%22%20y1%3D%225%22%20x2%3D%2215%22%20y2%3D%2225%22%20stroke%3D%22%23eef0e7%22%20stroke-width%3D%221.6%22/%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%228.5%22%20r%3D%222.6%22%20fill%3D%22%23e6b65a%22/%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2219%22%20r%3D%222.6%22%20fill%3D%22%23eef0e7%22/%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2222.5%22%20r%3D%222.6%22%20fill%3D%22%23e6b65a%22/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Agropecuária Burgel">
+<meta property="og:description" content="Agropecuária Burgel: a história da família de Pedro Alfredo e Livani Ioris Burgel, de Não-Me-Toque a Cachoeira do Sul e Chapadão do Sul.">
+<meta property="og:image" content="/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500&display=swap">
+<style>
+/* Layout: narrativa cinematográfica em cenas. Campo ao entardecer (abertura) → linha do tempo presa ao meridiano 52°O → noite no cerrado (Livani) → gerações → lavoura → álbum → contato */
+:root{
+  --bg:#eef0e7;
+  --surface:#e2e5d8;
+  --ink:#16231b;
+  --muted:#56635a;
+  --faint:#a8b0a2;
+  --line:#cbd0c1;
+  --straw:#a87c1f;
+  --water:#3c6870;
+  --on-ink:#eef0e7;
+  /* cenas: cores fixas, sempre escuras */
+  --scene:#0c1411;
+  --scene-text:#f2eee0;
+  --scene-muted:#b9bba8;
+  --gold:#e6b65a;
+  --display:"Gloock", Georgia, "Times New Roman", serif;
+  --accent:"Newsreader", Georgia, serif;
+  --body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --hand:"Caveat", "Segoe Print", cursive;
+  --wrap:1240px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#101813; --surface:#17221b; --ink:#e7eadf; --muted:#9ba79e; --faint:#4a574e; --line:#2a382f;
+    --straw:#dcae4f; --water:#83adb4; --on-ink:#101813; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101813; --surface:#17221b; --ink:#e7eadf; --muted:#9ba79e; --faint:#4a574e; --line:#2a382f;
+  --straw:#dcae4f; --water:#83adb4; --on-ink:#101813; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(16px,4vw,48px)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.04;text-wrap:balance;margin:0}
+p{margin:0}
+em.a{font-family:var(--accent);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--water)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--on-ink);text-decoration:none;font-weight:600;font-size:14px;padding:12px 20px;border-radius:999px;border:0;cursor:pointer;transition:transform .3s var(--ease),background .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:16px;height:16px}
+
+/* ---------- Cabeçalho ---------- */
+.top{position:fixed;inset:0 0 auto 0;z-index:30;padding-top:env(safe-area-inset-top,0px);color:var(--scene-text);transition:background .4s,color .4s,border-color .4s;border-bottom:1px solid transparent}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
+.top.solid{background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);border-bottom-color:var(--line)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:30px;height:30px;flex:none}
+.brand b{font-family:var(--display);font-weight:400;font-size:24px;line-height:1}
+.brand span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.7;margin-top:3px}
+.top nav{display:flex;gap:26px;font-size:14px;font-weight:500}
+.top nav a{text-decoration:none;opacity:.78;position:relative}
+.top nav a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.top nav a:hover{opacity:1}
+.top nav a:hover::after{transform:scaleX(1)}
+.top .btn{background:var(--scene-text);color:var(--scene)}
+.top.solid .btn{background:var(--ink);color:var(--on-ink)}
+@media (max-width:900px){.top nav{display:none}}
+
+/* ---------- Abertura: campo ---------- */
+.hero{position:relative;min-height:clamp(680px,96vh,980px);display:grid;background:var(--scene);color:var(--scene-text);overflow:hidden;isolation:isolate}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:-1}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,14,12,.55) 0%,rgba(8,14,12,0) 34%,rgba(8,14,12,0) 58%,rgba(8,14,12,.7) 100%),linear-gradient(90deg,rgba(8,14,12,.55) 0%,rgba(8,14,12,.15) 45%,rgba(8,14,12,0) 65%);pointer-events:none}
+.hero .wrap{width:100%;display:grid;gap:48px;grid-template-rows:1fr auto;padding-top:calc(110px + env(safe-area-inset-top,0px));padding-bottom:36px}
+.hero-copy{align-self:start;max-width:980px;padding-top:clamp(10px,4vh,50px)}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{font-size:clamp(46px,7.8vw,116px);letter-spacing:-.02em;margin-top:20px;line-height:.98}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.08em}
+.hero h1 .ln > span{display:inline-block;animation:rise 1.3s var(--ease) both}
+.hero h1 .ln:nth-child(2) > span{animation-delay:.12s}
+.hero h1 .ln:nth-child(3) > span{animation-delay:.24s}
+.hero h1 em.a{color:var(--gold)}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+.hero .lede{font-size:clamp(17px,1.5vw,20px);color:var(--scene-muted);max-width:46ch;margin-top:26px;animation:fade 1.4s .5s var(--ease) both}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;animation:fade 1.4s .7s var(--ease) both}
+.hero .btn{background:var(--scene-text);color:var(--scene)}
+.hero .ghost{display:inline-flex;align-items:center;padding:12px 20px;border-radius:999px;border:1px solid rgba(242,238,224,.35);text-decoration:none;font-weight:600;font-size:14px;transition:border-color .3s,background .3s}
+.hero .ghost:hover{border-color:var(--scene-text);background:rgba(242,238,224,.08)}
+@keyframes fade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero-foot{display:flex;justify-content:space-between;align-items:end;gap:20px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--scene-muted)}
+.scroll-cue{display:flex;align-items:center;gap:12px}
+.scroll-cue i{display:block;width:1px;height:46px;background:linear-gradient(var(--scene-text),transparent);position:relative;overflow:hidden}
+.scroll-cue i::after{content:"";position:absolute;left:0;top:-50%;width:1px;height:50%;background:var(--gold);animation:drip 2.2s ease-in-out infinite}
+@keyframes drip{to{top:110%}}
+@media (max-width:640px){.hero-foot .coords{display:none}.hero::after{background:linear-gradient(180deg,rgba(8,14,12,.6) 0%,rgba(8,14,12,.25) 50%,rgba(8,14,12,.75) 100%)}}
+
+/* ---------- Faixa de lugares ---------- */
+.marquee{background:var(--scene);color:var(--scene-text);border-top:1px solid rgba(242,238,224,.1);overflow:hidden;padding-block:22px}
+.marquee .track{display:flex;width:max-content;animation:slide 48s linear infinite}
+.marquee span{font-family:var(--display);font-size:clamp(28px,3.6vw,48px);white-space:nowrap;padding-right:42px;display:flex;align-items:center;gap:42px}
+.marquee span:nth-child(even){color:transparent;-webkit-text-stroke:1px rgba(242,238,224,.55)}
+.marquee span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--gold);flex:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- Manifesto ---------- */
+.manifesto{padding-block:clamp(90px,13vw,170px)}
+.manifesto .eyebrow{margin-bottom:28px}
+.manifesto p.big{font-family:var(--display);font-size:clamp(30px,4.3vw,60px);line-height:1.16;letter-spacing:-.01em;max-width:24ch;text-wrap:pretty}
+.manifesto .w{color:var(--faint);transition:color .5s}
+.manifesto .w.on{color:var(--ink)}
+.manifesto .w.gold.on{color:var(--straw)}
+.manifesto .sign{display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:48px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.manifesto .sign b{color:var(--ink);font-weight:500}
+
+/* ---------- Jornada ---------- */
+.journey{padding-bottom:clamp(80px,10vw,140px)}
+.journey .intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(40px,6vw,80px)}
+.journey h2{font-size:clamp(40px,5.6vw,76px);margin-top:16px}
+.journey .intro p{color:var(--muted);max-width:50ch}
+.jgrid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px)}
+.stick{position:sticky;top:calc(96px + env(safe-area-inset-top,0px));align-self:start;height:calc(100vh - 140px);max-height:700px;display:grid;grid-template-rows:auto 1fr;gap:20px}
+.stick .now{display:flex;align-items:baseline;gap:18px;border-bottom:1px solid var(--line);padding-bottom:18px}
+.stick .num{font-family:var(--display);font-size:clamp(64px,7vw,104px);line-height:.8;color:var(--straw);font-variant-numeric:tabular-nums;min-width:2ch}
+.stick .now div{display:grid;gap:4px;min-width:0}
+.stick .place{font-family:var(--display);font-size:clamp(22px,2.2vw,30px);line-height:1.1}
+.stick .of{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.stick svg{width:100%;height:100%;min-height:0}
+.chapters{list-style:none;margin:0;padding:0}
+.ch{padding-block:clamp(48px,9vh,96px);border-top:1px solid var(--line);opacity:.42;transition:opacity .6s var(--ease)}
+.ch:first-child{border-top:0;padding-top:0}
+.ch.active{opacity:1}
+.ch .tag{display:flex;gap:12px;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--water)}
+.ch .tag b{font-weight:500;color:var(--straw)}
+.ch h3{font-size:clamp(32px,3.6vw,50px);margin-top:16px}
+.ch p{color:var(--muted);margin-top:18px;max-width:52ch;font-size:18px}
+.ch p strong{color:var(--ink);font-weight:600}
+.ch .note{display:inline-block;margin-top:18px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--muted);border:1px dashed var(--line);padding:6px 10px;border-radius:3px}
+@media (max-width:900px){
+  .journey .intro{grid-template-columns:1fr}
+  .jgrid{grid-template-columns:1fr}
+  .stick{display:none}
+  .ch{opacity:1}
+}
+
+.mprog{display:none}
+@media (max-width:900px){
+  .mprog{display:flex;align-items:center;gap:12px;position:sticky;top:var(--hh,81px);z-index:5;margin-inline:calc(-1 * clamp(16px,4vw,48px));padding:12px clamp(16px,4vw,48px);background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .mnum{font-family:var(--display);font-size:24px;line-height:1;color:var(--straw);font-variant-numeric:tabular-nums}
+  .mplace{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1}
+  .mprog i{display:block;width:72px;height:2px;background:var(--line);flex:none;overflow:hidden}
+  .mprog b{display:block;height:100%;width:12.5%;background:var(--straw);transition:width .6s var(--ease)}
+}
+
+/* ---------- Livani: noite no cerrado ---------- */
+.night{position:relative;background:#060b0e;color:var(--scene-text);overflow:hidden;isolation:isolate;min-height:clamp(680px,100vh,960px);display:flex;align-items:center}
+.night canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1;display:block}
+.night .wrap{width:100%;padding-block:clamp(90px,12vw,150px)}
+.night .ncopy{max-width:600px}
+.night .eyebrow{color:var(--gold)}
+.night h2{font-size:clamp(42px,6vw,86px);margin-top:20px;letter-spacing:-.015em}
+.night h2 em.a{color:var(--gold)}
+.night p{color:var(--scene-muted);font-size:clamp(17px,1.45vw,19px);margin-top:26px;max-width:48ch}
+.night p strong{color:var(--scene-text);font-weight:600}
+.night .facts{display:flex;flex-wrap:wrap;gap:14px 36px;margin-top:40px;padding-top:26px;border-top:1px solid rgba(242,238,224,.16)}
+.night .facts div{display:grid;gap:2px}
+.night .facts b{font-family:var(--display);font-weight:400;font-size:24px;color:var(--scene-text)}
+.night .facts span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--scene-muted)}
+@media (max-width:760px){.night{align-items:flex-start}.night .wrap{padding-bottom:300px}}
+
+/* ---------- Gerações ---------- */
+.gens{padding-block:clamp(90px,12vw,160px)}
+.gens .intro{max-width:760px;margin-bottom:clamp(48px,7vw,90px)}
+.gens h2{font-size:clamp(40px,5.6vw,76px);margin-top:16px}
+.gens .intro p{color:var(--muted);margin-top:20px;max-width:54ch}
+.tree{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2.4vw,32px)}
+.tree svg.link{position:absolute;left:0;right:0;top:34px;width:100%;height:20px;overflow:visible;pointer-events:none}
+.gen{position:relative;display:grid;gap:14px;align-content:start;min-width:0}
+.gen .dot{width:68px;height:68px;border-radius:50%;background:var(--bg);border:1px solid var(--line);display:grid;place-items:center;font-family:var(--display);font-size:24px;position:relative;z-index:1;transition:border-color .4s,transform .5s var(--ease)}
+.gen:hover .dot{transform:scale(1.06);border-color:var(--straw)}
+.gen.main .dot{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.gen .role{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--water)}
+.gen h3{font-size:clamp(24px,2.3vw,30px)}
+.gen p{color:var(--muted);font-size:15.5px}
+.names{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}.names li{font-size:13px;font-weight:500;border:1px solid var(--line);border-radius:999px;padding:3px 10px;transition:border-color .3s,background .3s}.names li:hover{border-color:var(--straw)}
+@media (max-width:900px){.tree{grid-template-columns:1fr 1fr;row-gap:44px}.tree svg.link{display:none}}
+@media (max-width:520px){.tree{grid-template-columns:1fr}}
+
+/* ---------- Atuação ---------- */
+.work{padding-block:clamp(40px,6vw,80px) clamp(90px,12vw,160px)}
+.work .intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(40px,6vw,72px)}
+.work h2{font-size:clamp(40px,5.6vw,76px);margin-top:16px}
+.work .intro p{color:var(--muted);max-width:50ch}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,2.4vw,30px);perspective:1200px}
+.card{min-width:0;display:grid;gap:22px;align-content:start}
+.art{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:6px;overflow:hidden;transform-style:preserve-3d;transition:transform .6s var(--ease),box-shadow .6s;box-shadow:0 1px 0 var(--line)}
+.art svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.art .tag{position:absolute;left:16px;top:16px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#f2eee0;background:rgba(10,16,13,.45);backdrop-filter:blur(6px);padding:5px 9px;border-radius:3px}
+.art .shine{position:absolute;inset:0;background:radial-gradient(500px circle at var(--mx,50%) var(--my,0%),rgba(255,230,170,.22),transparent 45%);opacity:0;transition:opacity .4s;pointer-events:none}
+.card:hover .art{box-shadow:0 30px 60px -30px rgba(10,20,15,.55)}
+.card:hover .art .shine{opacity:1}
+.card h3{font-size:clamp(26px,2.4vw,32px)}
+.card p{color:var(--muted);margin-top:8px}
+@media (max-width:900px){.work .intro{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.art{aspect-ratio:16/11}}
+
+/* ---------- Números ---------- */
+.numbers{border-block:1px solid var(--line)}
+.numbers .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.n{padding:34px 24px 34px 0;display:grid;gap:6px}
+.n + .n{padding-left:24px;border-left:1px solid var(--line)}
+.n b{font-family:var(--display);font-weight:400;font-size:clamp(36px,4.4vw,60px);line-height:1;font-variant-numeric:tabular-nums}
+.n b small{font-size:.45em;margin-left:4px;color:var(--straw)}
+.n span{font-size:14px;color:var(--muted)}
+@media (max-width:900px){.numbers .wrap{grid-template-columns:1fr 1fr}.n:nth-child(3){padding-left:0;border-left:0}.n:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* ---------- Fazendas ---------- */
+.farms{padding-block:0 clamp(90px,12vw,160px)}
+.farms .intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.farms h2{font-size:clamp(40px,5.6vw,76px);margin-top:16px}
+.farms .intro p{color:var(--muted);max-width:50ch}
+.farmlist{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.farm{position:relative;display:grid;grid-template-columns:120px minmax(0,1fr) minmax(0,auto);gap:clamp(16px,4vw,56px);align-items:center;padding-block:26px;border-bottom:1px solid var(--line);overflow:hidden}
+.farm::before{content:"";position:absolute;inset:0;background:var(--surface);transform:scaleY(0);transform-origin:bottom;transition:transform .6s var(--ease);z-index:-1}
+.farm:hover::before{transform:scaleY(1)}
+.farm{isolation:isolate}
+.topo{width:120px;height:84px;display:block}
+.topo path{transition:stroke .5s}
+.farm:hover .topo path{stroke:var(--straw)}
+.fx{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;min-width:0}
+.fi{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--water)}
+.farm h3{font-size:clamp(40px,6vw,84px);line-height:1;transition:transform .6s var(--ease)}
+.farm:hover h3{transform:translateX(10px)}
+.who{display:grid;gap:2px;text-align:right;font-weight:600;font-size:17px}
+.who span{font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.more{margin-top:22px;color:var(--muted);font-size:15px}
+@media (max-width:900px){.farms .intro{grid-template-columns:1fr}.farm{grid-template-columns:72px minmax(0,1fr)}.topo{width:72px;height:52px}.who{grid-column:2;text-align:left}}
+
+/* ---------- Álbum ---------- */
+.album{padding-block:clamp(70px,9vw,120px);overflow:hidden;background:var(--surface)}
+.album .intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(40px,5vw,64px)}
+.album h2{font-size:clamp(34px,4.2vw,56px);margin-top:16px}
+.album .intro p{color:var(--muted);max-width:50ch}
+.prints{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,44px);align-items:start;max-width:860px;margin-inline:auto}
+.print{margin:0;background:#f7f3e8;padding:12px 12px 16px;box-shadow:0 18px 40px -22px rgba(20,25,15,.45),0 1px 2px rgba(20,25,15,.15);transform:rotate(var(--r,0deg)) translateY(var(--y,0));transition:transform .6s var(--ease),box-shadow .6s;min-width:0}
+.print:hover{transform:rotate(0) translateY(-8px) scale(1.03);box-shadow:0 30px 60px -24px rgba(20,25,15,.5)}
+.print .ph{aspect-ratio:1/1;max-width:100%;position:relative;overflow:hidden;background:#3a3326}
+.print .ph canvas{width:100%;height:100%;display:block}
+.print .ph span{position:absolute;inset:auto 10px 10px 10px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(247,243,232,.85);text-align:center}
+.print figcaption{font-family:var(--hand);font-size:22px;color:#3b3527;text-align:center;margin-top:10px;line-height:1.1}
+@media (max-width:900px){.album .intro{grid-template-columns:1fr}}@media (max-width:560px){.prints{grid-template-columns:1fr 1fr 1fr;gap:12px}.print{padding:6px 6px 8px}.print figcaption{font-size:15px}}
+
+/* ---------- Contato ---------- */
+.contact{background:var(--bg);border-top:1px solid var(--line);padding-block:clamp(90px,12vw,150px)}
+.contact .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px)}
+.contact h2{font-size:clamp(40px,5.6vw,76px);margin-top:16px}
+.contact .lede{color:var(--muted);max-width:40ch;margin-top:22px;font-size:18px}
+.rows{display:grid;border-top:1px solid var(--line);margin:0;align-self:start}
+.row{display:grid;grid-template-columns:130px minmax(0,1fr) auto;gap:16px;align-items:center;padding-block:20px;border-bottom:1px solid var(--line)}
+.row dt{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.row dd{margin:0;font-weight:600;font-size:18px;overflow-wrap:anywhere}
+.row dd a{text-decoration:none;border-bottom:1px solid var(--straw)}
+.row dd small{display:block;font-weight:400;font-size:14px;color:var(--muted)}
+.copy{font:500 12px var(--mono);background:transparent;border:1px solid var(--line);color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer;transition:border-color .3s}
+.copy:hover{border-color:var(--ink)}
+.pending{display:inline-block;font:500 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--straw);border:1px solid currentColor;padding:2px 6px;border-radius:2px;margin-left:8px;vertical-align:3px}
+@media (max-width:900px){.contact .grid{grid-template-columns:1fr}.row{grid-template-columns:1fr auto}.row dt{grid-column:1/-1}}
+
+/* ---------- Rodapé ---------- */
+footer{background:var(--scene);color:var(--scene-text);overflow:hidden;padding-top:60px}
+footer .meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:13px;color:var(--scene-muted)}
+footer .mark{font-family:var(--display);font-size:clamp(90px,25vw,380px);line-height:.78;letter-spacing:-.03em;text-align:center;margin-top:40px;background:linear-gradient(180deg,#f2d38c 0%,#c99434 45%,#4a3a17 100%);-webkit-background-clip:text;background-clip:text;color:transparent;user-select:none;transform:translateY(12%)}
+
+.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:25;box-shadow:0 10px 30px -8px rgba(0,0,0,.4);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .4s,transform .4s var(--ease)}
+.float.show{opacity:1;transform:none;pointer-events:auto}
+
+/* revelações suaves: o estado de repouso é sempre visível */
+.rv{transition:transform 1.1s var(--ease),opacity 1.1s var(--ease)}
+.js .rv:not(.in){transform:translateY(34px)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv:not(.in){transform:none;opacity:1}
+}
+</style>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Agropecuária Burgel, início">
+      <svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="14" fill="none" stroke="currentColor" stroke-width="1.2"/><line x1="15" y1="4" x2="15" y2="26" stroke="currentColor" stroke-width="1.2"/><circle cx="15" cy="8" r="2.3" fill="#e6b65a"/><circle cx="15" cy="19.5" r="2.3" fill="currentColor"/><circle cx="15" cy="23" r="2.3" fill="#e6b65a"/></svg>
+      <div><b>Burgel</b><span>Agropecuária</span></div>
+    </a>
+    <nav aria-label="Seções">
+      <a href="#historia">História</a>
+      <a href="#livani">Livani</a>
+      <a href="#familia">Família</a>
+      <a href="#atuacao">Atuação</a>
+      <a href="#fazendas">Fazendas</a>
+    </nav>
+    <a class="btn" href="#contato">Fale conosco</a>
+  </div>
+</header>
+
+<main>
+  <!-- ABERTURA -->
+  <section class="hero" id="inicio" aria-label="Abertura">
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="hero-copy" id="heroCopy">
+        <p class="eyebrow">Não-Me-Toque · Cachoeira do Sul · Chapadão do Sul</p>
+        <h1>
+          <span class="ln"><span>Uma família</span></span>
+          <span class="ln"><span>que abriu caminho</span></span>
+          <span class="ln"><span>na <em class="a">terra.</em></span></span>
+        </h1>
+        <p class="lede">Pedro Alfredo e Livani Ioris Burgel começaram na estrada e levaram a família do planalto gaúcho a Cachoeira do Sul e ao cerrado de Chapadão do Sul. Hoje, filhos e netos seguem o mesmo caminho.</p>
+        <div class="actions">
+          <a class="btn" href="#historia">Conheça a nossa história
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+          <a class="ghost" href="#contato">Fale com a família</a>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div class="scroll-cue"><i></i>Role para descer</div>
+        <div class="coords">30°02′ S · 52°53′ O — Cachoeira do Sul, RS</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Não-Me-Toque</span><span>Exército</span><span>Estrada</span><span>Pedro &amp; Livani</span><span>Cachoeira do Sul</span><span>Chapadão do Sul</span><span>Filhos e netos</span>
+      <span>Não-Me-Toque</span><span>Exército</span><span>Estrada</span><span>Pedro &amp; Livani</span><span>Cachoeira do Sul</span><span>Chapadão do Sul</span><span>Filhos e netos</span>
+    </div>
+  </div>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto">
+    <div class="wrap">
+      <p class="eyebrow">Quem somos</p>
+      <p class="big" id="manifesto" data-gold="pai,mãe,filhos,netos">A Agropecuária Burgel não é obra de uma pessoa só. É a soma de um pai que deu o exemplo, de uma mãe que acreditou quando ainda não havia nada, de filhos que pegaram junto na lida e de netos que já aprendem o caminho da lavoura.</p>
+      <div class="sign"><span>Fundadores <b>Pedro Alfredo Burgel</b> e <b>Livani Ioris Burgel</b></span><span>Filhos <b>Fernando</b> e <b>Cristiane</b></span><span>Sede <b>Cachoeira do Sul, RS</b></span></div>
+    </div>
+  </section>
+
+  <!-- JORNADA -->
+  <section class="journey" id="historia">
+    <div class="wrap">
+      <div class="intro rv">
+        <div>
+          <p class="eyebrow">A jornada</p>
+          <h2>Oito capítulos, três estados, uma família.</h2>
+        </div>
+        <p>A história dos Burgel atravessa o mapa de norte a sul, quase sempre sobre a mesma linha: o meridiano 52° Oeste, que passa perto de Chapadão do Sul, Não-Me-Toque e Cachoeira do Sul.</p>
+      </div>
+      <div class="mprog" aria-hidden="true"><span class="mnum" id="mNum">01</span><span class="mplace" id="mPlace">Não-Me-Toque, RS</span><i><b id="mBar"></b></i></div>
+      <div class="jgrid">
+        <aside class="stick" aria-hidden="true">
+          <div class="now"><span class="num" id="chNum">01</span><div><span class="place" id="chPlace">Não-Me-Toque, RS</span><span class="of">Capítulo <span id="chOf">1</span> de 8</span></div></div>
+          <svg id="map" viewBox="0 0 360 560" preserveAspectRatio="xMidYMid meet"></svg>
+        </aside>
+        <ol class="chapters" id="chapters">
+          <li class="ch active" data-lat="-28.46" data-place="Não-Me-Toque, RS">
+            <p class="tag"><b>01</b> Não-Me-Toque, RS</p>
+            <h3>As raízes</h3>
+            <p>Pedro Alfredo Burgel nasceu e cresceu em Não-Me-Toque, no planalto gaúcho. O pai, <strong>Jacó Burgel</strong>, era fazendeiro, e foi com ele que Pedro aprendeu o valor da terra e do trabalho bem feito.</p>
+          </li>
+          <li class="ch" data-lat="-28.46" data-place="Exército Brasileiro">
+            <p class="tag"><b>02</b> Exército</p>
+            <h3>O quartel</h3>
+            <p>Ainda muito jovem, Pedro entrou para o Exército e virou <strong>motorista do coronel</strong>. Foram anos de disciplina, responsabilidade e muita estrada, que marcaram o jeito dele de trabalhar.</p>
+          </li>
+          <li class="ch" data-lat="-29.3" data-place="Estradas do Sul">
+            <p class="tag"><b>03</b> Estradas do Sul</p>
+            <h3>Ônibus e fretes</h3>
+            <p>Ao sair do Exército, Pedro abriu um negócio de fretamento de ônibus e fretes <strong>junto com o irmão</strong>. Era trabalho de sol a sol, e foi na estrada que a vida dele mudou de rumo.</p>
+          </li>
+          <li class="ch" data-lat="-28.46" data-place="Pedro &amp; Livani">
+            <p class="tag"><b>04</b> Pedro &amp; Livani</p>
+            <h3>Livani</h3>
+            <p>Nessa época, Pedro conheceu <strong>Livani Ioris</strong>. A partir daí, a história deixou de ser de um e passou a ser dos dois. Juntos, decidiram deixar Não-Me-Toque e buscar novas terras.</p>
+          </li>
+          <li class="ch" data-lat="-30.04" data-place="Cachoeira do Sul, RS">
+            <p class="tag"><b>05</b> Cachoeira do Sul, RS</p>
+            <h3>Onde a família cresceu</h3>
+            <p>Em Cachoeira do Sul, às margens do Jacuí e na terra do arroz, os Burgel fincaram raízes. A propriedade cresceu, os filhos <strong>Fernando e Cristiane</strong> cresceram junto com a lavoura, e o nome da família ganhou respeito na região.</p>
+          </li>
+          <li class="ch" data-lat="-18.79" data-place="Chapadão do Sul, MS">
+            <p class="tag"><b>06</b> Chapadão do Sul, MS</p>
+            <h3>Pioneiros no cerrado</h3>
+            <p>Pedro e Livani também foram para o Centro-Oeste e conheceram Chapadão do Sul quando a região ainda era aberta pelos primeiros gaúchos. Não havia quase nada. <strong>Livani morou em barraca</strong> e deu o suporte que tornou possível cada passo naqueles anos.</p>
+          </li>
+          <li class="ch" data-lat="-30.04" data-place="Vida pública">
+            <p class="tag"><b>07</b> Comunidade</p>
+            <h3>Vida pública</h3>
+            <p>Além da lavoura, Pedro se envolveu com a vida da comunidade e chegou a disputar uma vaga de <strong>vereador</strong>.</p>
+          </li>
+          <li class="ch" data-lat="all" data-place="Hoje">
+            <p class="tag"><b>08</b> Hoje</p>
+            <h3>O legado</h3>
+            <p>O que Pedro e Livani começaram segue com os filhos <strong>Fernando e Cristiane</strong> e com os netos <strong>Ana Júlia, João Pedro, Maria Eduarda e Vicente</strong>. A Agropecuária Burgel segue com os valores do começo: palavra cumprida, trabalho em família e cuidado com a terra.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVANI -->
+  <section class="night" id="livani">
+    <canvas id="nightSky" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="ncopy rv">
+        <p class="eyebrow">Livani Ioris Burgel</p>
+        <h2>Sem ela, nada disso teria saído <em class="a">do chão.</em></h2>
+        <p>Quando a família partiu para o cerrado, Livani confiou e foi junto, para um lugar onde ainda não havia estrada, cidade nem casa pronta. <strong>Morou em barraca</strong>, cuidou da família e segurou as pontas nos anos mais duros, enquanto a terra ainda estava sendo aberta.</p>
+        <p>Cada hectare dos Burgel tem um pouco da coragem dela.</p>
+        <div class="facts">
+          <div><b>Cofundadora</b><span>da Agropecuária Burgel</span></div>
+          <div><b>Pioneira</b><span>no cerrado de Chapadão do Sul</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GERAÇÕES -->
+  <section class="gens" id="familia">
+    <div class="wrap">
+      <div class="intro rv">
+        <p class="eyebrow">A família</p>
+        <h2>Cada geração deixou a sua marca.</h2>
+        <p>A Agropecuária Burgel foi construída a muitas mãos: de quem ensinou, de quem começou, de quem ficou e de quem vai continuar.</p>
+      </div>
+      <div class="tree" id="tree">
+        <svg class="link" viewBox="0 0 1000 20" preserveAspectRatio="none" aria-hidden="true"><path id="treeLine" d="M34 10 H 966" stroke="var(--straw)" stroke-width="1.5" fill="none" vector-effect="non-scaling-stroke"/></svg>
+        <div class="gen rv"><div class="dot">J</div><span class="role">A origem</span><h3>Jacó Burgel</h3><p>Fazendeiro em Não-Me-Toque. Ensinou ao filho o valor da terra.</p></div>
+        <div class="gen main rv"><div class="dot">P&amp;L</div><span class="role">Fundadores</span><h3>Pedro &amp; Livani</h3><p>Da estrada ao campo, construíram juntos o patrimônio da família no RS e no Centro-Oeste.</p></div>
+        <div class="gen rv"><div class="dot">F&amp;C</div><span class="role">Segunda geração</span><h3>Fernando &amp; Cristiane</h3><p>Cresceram na lida, pegaram junto nos anos difíceis e hoje seguem o trabalho da família.</p></div>
+        <div class="gen rv"><div class="dot">N</div><span class="role">Terceira geração</span><h3>Os netos</h3><p>Levam o nome Burgel adiante.</p><ul class="names"><li>Ana Júlia</li><li>João Pedro</li><li>Maria Eduarda</li><li>Vicente</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <div class="numbers" aria-label="Em números">
+    <div class="wrap">
+      <div class="n"><b data-count="3">3</b><span>estados na trajetória: RS, MS e MT</span></div>
+      <div class="n"><b data-count="1250">1.250<small>km</small></b><span>de Cachoeira do Sul a Chapadão do Sul, em linha reta</span></div>
+      <div class="n"><b data-count="5">5<small>+</small></b><span>fazendas da família, entre outras áreas</span></div>
+      <div class="n"><b data-count="4">4</b><span>gerações, de Jacó aos netos</span></div>
+    </div>
+  </div>
+
+  <!-- ATUAÇÃO -->
+  <section class="work" id="atuacao">
+    <div class="wrap">
+      <div class="intro rv">
+        <div>
+          <p class="eyebrow">O que fazemos</p>
+          <h2>Lavoura e pecuária no coração do Rio Grande.</h2>
+        </div>
+        <p>Cachoeira do Sul é conhecida como a Capital Nacional do Arroz. É nessa terra, entre a várzea do Jacuí e as coxilhas, que a família planta e cria.</p>
+      </div>
+      <div class="cards">
+        <article class="card rv"><div class="art" data-art="rice"><svg aria-hidden="true"></svg><span class="tag">Várzea</span><i class="shine"></i></div><div><h3>Arroz irrigado</h3><p>A cultura que define a região. Manejo de água, preparo de solo e colheita no tempo certo.</p></div></article>
+        <article class="card rv"><div class="art" data-art="soy"><svg aria-hidden="true"></svg><span class="tag">Coxilha</span><i class="shine"></i></div><div><h3>Soja</h3><p>Em rotação com o arroz nas várzeas e nas terras altas, com plantio direto.</p></div></article>
+        <article class="card rv"><div class="art" data-art="cattle"><svg aria-hidden="true"></svg><span class="tag">Campo nativo</span><i class="shine"></i></div><div><h3>Pecuária de corte</h3><p>Gado criado no campo nativo do Pampa, com o cuidado de quem conhece cada invernada.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAZENDAS -->
+  <section class="farms" id="fazendas">
+    <div class="wrap">
+      <div class="intro rv">
+        <div>
+          <p class="eyebrow">Nossas fazendas</p>
+          <h2>Terras com nome de família.</h2>
+        </div>
+        <p>A Agropecuária Burgel reúne várias propriedades, cada uma com a sua história. Duas delas foram batizadas com o nome dos filhos, Fernando e Cristiane.</p>
+      </div>
+      <ol class="farmlist">
+        <li class="farm rv"><svg class="topo" data-seed="3" aria-hidden="true"></svg><div class="fx"><span class="fi">Fazenda</span><h3>Geribá</h3></div><p class="who"></p></li>
+        <li class="farm rv"><svg class="topo" data-seed="7" aria-hidden="true"></svg><div class="fx"><span class="fi">Fazenda</span><h3>Albardão</h3></div><p class="who"></p></li>
+        <li class="farm rv"><svg class="topo" data-seed="11" aria-hidden="true"></svg><div class="fx"><span class="fi">Fazenda</span><h3>Mato Grosso</h3></div><p class="who"></p></li>
+        <li class="farm rv"><svg class="topo" data-seed="13" aria-hidden="true"></svg><div class="fx"><span class="fi">Fazenda</span><h3>Cristiane</h3></div><p class="who"><span>Nome em homenagem</span>à filha</p></li>
+        <li class="farm rv"><svg class="topo" data-seed="17" aria-hidden="true"></svg><div class="fx"><span class="fi">Fazenda</span><h3>Fernando</h3></div><p class="who"><span>Nome em homenagem</span>ao filho</p></li>
+      </ol>
+      <p class="more rv">E outras áreas da família.</p>
+    </div>
+  </section>
+
+  <!-- ÁLBUM -->
+  <section class="album" id="album">
+    <div class="wrap">
+      <div class="intro rv">
+        <div>
+          <p class="eyebrow">Lembranças</p>
+          <h2>Gente, terra e estrada.</h2>
+        </div>
+        <p>Três momentos da história da família: o casal, os tempos do fretamento e a barraca no cerrado.</p>
+      </div>
+      <div class="prints">
+        <figure class="print rv" style="--r:-3deg"><div class="ph"><canvas data-photo="couple"></canvas></div><figcaption>Pedro e Livani</figcaption></figure>
+        <figure class="print rv" style="--r:2.5deg;--y:40px"><div class="ph"><canvas data-photo="bus"></canvas></div><figcaption>Os tempos do fretamento</figcaption></figure>
+        <figure class="print rv" style="--r:-1.5deg;--y:10px"><div class="ph"><canvas data-photo="tent"></canvas></div><figcaption>A barraca no cerrado</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato">
+    <div class="wrap grid">
+      <div class="rv">
+        <p class="eyebrow">Contato</p>
+        <h2>Fale com a família Burgel.</h2>
+        <p class="lede">Para negócios, compra e venda de produção ou parcerias, fale direto com a gente.</p>
+      </div>
+      <dl class="rows rv">
+        <div class="row"><dt>Cidade</dt><dd>Cachoeira do Sul, RS<small>Zona rural</small></dd><span></span></div>
+        <div class="row"><dt>Fazendas</dt><dd>Geribá, Albardão, Mato Grosso, Cristiane e Fernando<small>e outras áreas da família</small></dd><span></span></div>
+        <div class="row"><dt>E-mail</dt><dd><a id="mail" href="mailto:aburgel@uol.com.br">aburgel@uol.com.br</a></dd><button class="copy" type="button" data-copy="mail">Copiar</button></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="meta"><span>Agropecuária Burgel · Cachoeira do Sul, RS</span><span>Fundada por Pedro Alfredo Burgel e Livani Ioris Burgel</span></div>
+    <div class="mark" aria-hidden="true">Burgel</div>
+  </div>
+</footer>
+
+<a class="btn float" href="#contato" aria-label="Contato">
+  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="m2 4 6 5 6-5"/></svg>
+  Contato</a>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){function hh(){var t=document.getElementById('top');if(t)document.documentElement.style.setProperty('--hh',t.offsetHeight+'px');}hh();window.addEventListener('resize',hh);})();
+var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ======================================================
+   util
+   ====================================================== */
+function rand(a,b){return a+Math.random()*(b-a);}
+function lerp(a,b,t){return a+(b-a)*t;}
+function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
+function fitCanvas(c,maxDpr){
+  var dpr=Math.min(window.devicePixelRatio||1,maxDpr||1.75);
+  var w=c.clientWidth,h=c.clientHeight;
+  c.width=Math.max(1,Math.round(w*dpr));c.height=Math.max(1,Math.round(h*dpr));
+  var ctx=c.getContext('2d');ctx.setTransform(dpr,0,0,dpr,0,0);
+  return {ctx:ctx,w:w,h:h};
+}
+function whenVisible(el,cb){
+  if(!('IntersectionObserver' in window)){cb(true);return;}
+  new IntersectionObserver(function(es){es.forEach(function(e){cb(e.isIntersecting);});},{rootMargin:'100px'}).observe(el);
+}
+
+/* ======================================================
+   Cena 1 — campo ao entardecer
+   ====================================================== */
+(function(){
+  var c=document.getElementById('field');if(!c)return;
+  var S,ctx,W,H,horizon,blades=[],motes=[],hillsFar=[],hillsNear=[],mouse={x:-999,y:-999,vx:0},running=false,t0=performance.now();
+  function build(){
+    S=fitCanvas(c,1.5);ctx=S.ctx;W=S.w;H=S.h;horizon=H*(W<700?0.76:0.6);
+    blades=[];motes=[];hillsFar=[];hillsNear=[];
+    var n=Math.round(clamp(W*H/420,900,3000));
+    for(var i=0;i<n;i++){
+      var d=Math.pow(Math.random(),0.62); // 0 longe .. 1 perto
+      var y=horizon+ (H-horizon+30)*d;
+      var h=(5+120*Math.pow(d,1.5))*rand(.55,1.25);
+      var light=lerp(46,11,Math.pow(d,.8))+rand(-4,4);
+      var hue=lerp(52,78,Math.random())-d*10;
+      blades.push({x:rand(-20,W+20),y:y,d:d,h:h,w:lerp(.5,3.2,d)*rand(.7,1.2),ph:rand(0,6.28),
+        col:'hsl('+hue.toFixed(0)+','+lerp(28,40,d).toFixed(0)+'%,'+light.toFixed(1)+'%)',
+        ear: d>.32 && Math.random()<.42, rim: d>.45 && Math.random()<.6});
+    }
+    blades.sort(function(a,b){return a.y-b.y;});
+    for(var k=0;k<90;k++)motes.push({x:rand(0,W),y:rand(horizon-H*.35,H),r:rand(.6,2.4),s:rand(.15,.6),ph:rand(0,6.28)});
+    for(var x=0;x<=W+20;x+=20){
+      hillsFar.push(horizon-14-Math.sin(x*.004+1)*16-Math.sin(x*.011)*7-Math.sin(x*.0021+2)*20);
+      hillsNear.push(horizon+4-Math.sin(x*.006+3)*10-Math.sin(x*.017)*4);
+    }
+  }
+  function sky(){
+    var g=ctx.createLinearGradient(0,0,0,horizon+10);
+    g.addColorStop(0,'#0e2226');g.addColorStop(.38,'#2c4a4a');g.addColorStop(.72,'#b9814a');g.addColorStop(.93,'#f0b866');g.addColorStop(1,'#ffd99a');
+    ctx.fillStyle=g;ctx.fillRect(0,0,W,horizon+10);
+    var sx=W*.72,sy=horizon-H*.05;
+    var glow=ctx.createRadialGradient(sx,sy,0,sx,sy,Math.max(W,H)*.55);
+    glow.addColorStop(0,'rgba(255,214,140,.75)');glow.addColorStop(.12,'rgba(255,190,110,.35)');glow.addColorStop(.5,'rgba(255,160,90,.06)');glow.addColorStop(1,'rgba(255,160,90,0)');
+    ctx.fillStyle=glow;ctx.fillRect(0,0,W,H);
+    ctx.beginPath();ctx.arc(sx,sy,Math.min(W,H)*.035+8,0,6.283);ctx.fillStyle='#fff1cc';ctx.fill();
+    // nuvens finas
+    ctx.globalAlpha=.18;ctx.fillStyle='#ffe0b0';
+    for(var i=0;i<5;i++){ctx.beginPath();ctx.ellipse(W*(.1+i*.2),horizon*(.35+(i%3)*.12),W*.16,3+i%2*2,0,0,6.283);ctx.fill();}
+    ctx.globalAlpha=1;
+  }
+  function hills(){
+    ctx.beginPath();ctx.moveTo(0,H);
+    for(var i=0;i<hillsFar.length;i++)ctx.lineTo(i*20,hillsFar[i]);
+    ctx.lineTo(W,H);ctx.closePath();ctx.fillStyle='rgba(74,82,62,.78)';ctx.fill();
+    ctx.beginPath();ctx.moveTo(0,H);
+    for(var j=0;j<hillsNear.length;j++)ctx.lineTo(j*20,hillsNear[j]);
+    ctx.lineTo(W,H);ctx.closePath();
+    var g=ctx.createLinearGradient(0,horizon-20,0,H);g.addColorStop(0,'#5a5530');g.addColorStop(.35,'#2c3220');g.addColorStop(1,'#0b110c');
+    ctx.fillStyle=g;ctx.fill();
+  }
+  function draw(now){
+    var t=(now-t0)/1000;
+    ctx.clearRect(0,0,W,H);
+    sky();hills();
+    var sx=W*.72;
+    ctx.lineCap='round';
+    for(var i=0;i<blades.length;i++){
+      var b=blades[i];
+      var gust=Math.sin(t*.55-b.x*.0035)*.55+Math.sin(t*1.7+b.x*.012+b.ph)*.22;
+      var bend=gust*b.h*.42;
+      var dx=b.x-mouse.x,dy=b.y-mouse.y;
+      if(b.d>.25){var dist=Math.sqrt(dx*dx+dy*dy);if(dist<160){bend+= (dx>0?1:-1)*(1-dist/160)*b.h*.75;}}
+      var tx=b.x+bend,ty=b.y-b.h+Math.abs(bend)*.25;
+      var cx=b.x+bend*.15,cy=b.y-b.h*.55;
+      ctx.beginPath();ctx.moveTo(b.x,b.y);ctx.quadraticCurveTo(cx,cy,tx,ty);
+      ctx.strokeStyle=b.col;ctx.lineWidth=b.w;ctx.stroke();
+      if(b.rim){
+        var side=(b.x<sx)?1:-1;
+        ctx.beginPath();ctx.moveTo(b.x+side*.6,b.y-b.h*.2);ctx.quadraticCurveTo(cx+side*.6,cy,tx+side*.5,ty);
+        var near=1-Math.min(1,Math.abs(b.x-sx)/(W*.6));
+        ctx.strokeStyle='rgba(255,205,120,'+(0.12+near*.38).toFixed(2)+')';ctx.lineWidth=Math.max(.6,b.w*.35);ctx.stroke();
+      }
+      if(b.ear){
+        var ang=Math.atan2(ty-cy,tx-cx);
+        ctx.save();ctx.translate(tx,ty);ctx.rotate(ang);
+        ctx.beginPath();ctx.ellipse(-b.h*.06,0,b.h*.09+1,b.w*.9+.5,0,0,6.283);
+        ctx.fillStyle=b.d>.7?'#6b5420':'#b08a3e';ctx.fill();ctx.restore();
+      }
+    }
+    ctx.globalCompositeOperation='lighter';
+    for(var m=0;m<motes.length;m++){
+      var p=motes[m];
+      var px=(p.x+t*12*p.s+Math.sin(t*.6+p.ph)*14)%(W+40)-20,py=p.y+Math.sin(t*.8+p.ph)*10;
+      var near=1-Math.min(1,Math.hypot(px-sx,py-horizon)/(W*.55));
+      ctx.beginPath();ctx.arc(px,py,p.r,0,6.283);
+      ctx.fillStyle='rgba(255,215,150,'+(0.08+near*.55*(.6+.4*Math.sin(t*2+p.ph))).toFixed(3)+')';ctx.fill();
+    }
+    ctx.globalCompositeOperation='source-over';
+    mouse.x+= (mouse.tx!==undefined? (mouse.tx-mouse.x)*.12:0);
+    mouse.y+= (mouse.ty!==undefined? (mouse.ty-mouse.y)*.12:0);
+  }
+  function loop(now){if(!running)return;draw(now);requestAnimationFrame(loop);}
+  build();draw(performance.now());
+  window.addEventListener('resize',function(){build();if(!running)draw(performance.now());});
+  c.parentElement.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();mouse.tx=e.clientX-r.left;mouse.ty=e.clientY-r.top;if(mouse.x<-900){mouse.x=mouse.tx;mouse.y=mouse.ty;}});
+  c.parentElement.addEventListener('pointerleave',function(){mouse.tx=-999;mouse.ty=-999;});
+  if(!REDUCED)whenVisible(c,function(v){if(v&&!running){running=true;requestAnimationFrame(loop);}else if(!v)running=false;});
+})();
+
+/* ======================================================
+   Cena 2 — noite no cerrado (Livani)
+   ====================================================== */
+(function(){
+  var c=document.getElementById('nightSky');if(!c)return;
+  var S,ctx,W,H,stars=[],flies=[],ground=null,tent={},running=false,t0=performance.now(),shoot=null;
+  function tree(g,x,y,len,ang,depth){
+    if(depth===0||len<2){g.beginPath();g.arc(x,y,rand(3,7),0,6.283);g.fill();return;}
+    var x2=x+Math.cos(ang)*len,y2=y+Math.sin(ang)*len;
+    g.lineWidth=Math.max(1,depth*1.2);g.beginPath();g.moveTo(x,y);g.lineTo(x2,y2);g.stroke();
+    var n=depth>2?2:rand(1,3)|0||1;
+    for(var i=0;i<n+1;i++)tree(g,x2,y2,len*rand(.6,.8),ang+rand(-.9,.9),depth-1);
+  }
+  function build(){
+    S=fitCanvas(c,1.5);ctx=S.ctx;W=S.w;H=S.h;
+    var mobile=W<760;
+    var hz=H*(mobile?.86:.8);
+    stars=[];
+    var n=Math.round(W*H/2600);
+    for(var i=0;i<n;i++){
+      var band=Math.random()<.45;
+      var x,y;
+      if(band){var u=Math.random();x=u*W;y=lerp(H*.05,hz*.75,u)+ (Math.random()-.5)*H*.18*(Math.random());}
+      else{x=rand(0,W);y=rand(0,hz);}
+      stars.push({x:x,y:y,r:Math.random()<.04?rand(1.2,1.9):rand(.3,1.05),a:rand(.3,1),tw:rand(.5,3),ph:rand(0,6.28),warm:Math.random()<.15});
+    }
+    // chão + árvores do cerrado (estático)
+    ground=document.createElement('canvas');ground.width=c.width;ground.height=c.height;
+    var g=ground.getContext('2d');var dpr=c.width/W;g.setTransform(dpr,0,0,dpr,0,0);
+    g.fillStyle='#03070a';g.strokeStyle='#03070a';g.lineCap='round';
+    g.beginPath();g.moveTo(0,H);
+    for(var x2=0;x2<=W+10;x2+=10)g.lineTo(x2,hz-Math.sin(x2*.004)*8-Math.sin(x2*.013+1)*4);
+    g.lineTo(W,H);g.closePath();g.fill();
+    var trees=Math.round(W/150);
+    for(var k=0;k<trees;k++){
+      var tx=rand(0,W);
+      if(!mobile && tx>W*.55&&tx<W*.85)continue;
+      var base=hz-Math.sin(tx*.004)*8+2;
+      tree(g,tx,base,rand(18,34),-Math.PI/2+rand(-.3,.3),4);
+    }
+    tent={x:mobile?W*.55:W*.72,y:hz-Math.sin((mobile?W*.55:W*.72)*.004)*8+2,s:mobile?44:clamp(W*.045,48,80)};
+    flies=[];for(var f=0;f<26;f++)flies.push({x:rand(W*.35,W),y:rand(hz-H*.2,H),ph:rand(0,6.28),sp:rand(.2,.6)});
+  }
+  function draw(now){
+    var t=(now-t0)/1000;
+    var hz=tent.y;
+    var g=ctx.createLinearGradient(0,0,0,H);
+    g.addColorStop(0,'#03070c');g.addColorStop(.55,'#0b1720');g.addColorStop(.8,'#142629');g.addColorStop(1,'#0a1210');
+    ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+    // via láctea
+    ctx.save();ctx.translate(W*.5,H*.38);ctx.rotate(Math.atan2(hz*.7,W));
+    var mw=ctx.createLinearGradient(0,-H*.16,0,H*.16);
+    mw.addColorStop(0,'rgba(140,160,190,0)');mw.addColorStop(.5,'rgba(150,170,200,.09)');mw.addColorStop(1,'rgba(140,160,190,0)');
+    ctx.fillStyle=mw;ctx.fillRect(-W,-H*.16,W*2,H*.32);ctx.restore();
+    for(var i=0;i<stars.length;i++){
+      var s=stars[i];var a=s.a*(.55+.45*Math.sin(t*s.tw+s.ph));
+      ctx.fillStyle=s.warm?'rgba(255,220,170,'+a.toFixed(2)+')':'rgba(225,235,255,'+a.toFixed(2)+')';
+      ctx.fillRect(s.x,s.y,s.r*1.4,s.r*1.4);
+    }
+    // estrela cadente
+    if(!shoot&&Math.random()<.004)shoot={x:rand(W*.2,W*.9),y:rand(0,H*.3),l:0};
+    if(shoot){shoot.l+=14;var L=Math.min(shoot.l,160);
+      var sg=ctx.createLinearGradient(shoot.x+shoot.l,shoot.y+shoot.l*.4,shoot.x+shoot.l-L,shoot.y+(shoot.l-L)*.4);
+      sg.addColorStop(0,'rgba(255,255,255,.9)');sg.addColorStop(1,'rgba(255,255,255,0)');
+      ctx.strokeStyle=sg;ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(shoot.x+shoot.l,shoot.y+shoot.l*.4);ctx.lineTo(shoot.x+shoot.l-L,shoot.y+(shoot.l-L)*.4);ctx.stroke();
+      if(shoot.l>420)shoot=null;}
+    // brilho da barraca no chão
+    var flick=.82+.1*Math.sin(t*9)+.08*Math.sin(t*23+1);
+    var gl=ctx.createRadialGradient(tent.x,hz,0,tent.x,hz,tent.s*5);
+    gl.addColorStop(0,'rgba(255,170,80,'+(.38*flick).toFixed(3)+')');gl.addColorStop(1,'rgba(255,150,60,0)');
+    ctx.fillStyle=gl;ctx.fillRect(0,0,W,H);
+    ctx.drawImage(ground,0,0,W,H);
+    // barraca
+    var s=tent.s,x=tent.x,y=hz;
+    ctx.beginPath();ctx.moveTo(x-s,y);ctx.lineTo(x,y-s*.95);ctx.lineTo(x+s,y);ctx.closePath();
+    var tg=ctx.createLinearGradient(x,y-s,x,y);tg.addColorStop(0,'rgba(255,190,110,'+(.75*flick).toFixed(2)+')');tg.addColorStop(1,'rgba(220,120,50,'+(.95*flick).toFixed(2)+')');
+    ctx.fillStyle=tg;ctx.fill();
+    ctx.beginPath();ctx.moveTo(x-s*.18,y);ctx.lineTo(x,y-s*.55);ctx.lineTo(x+s*.18,y);ctx.closePath();ctx.fillStyle='rgba(255,236,190,'+(.9*flick).toFixed(2)+')';ctx.fill();
+    ctx.strokeStyle='#03070a';ctx.lineWidth=2;
+    ctx.beginPath();ctx.moveTo(x,y-s*.95);ctx.lineTo(x,y-s*1.12);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(x-s,y);ctx.lineTo(x,y-s*.95);ctx.lineTo(x+s,y);ctx.stroke();
+    // vaga-lumes
+    ctx.globalCompositeOperation='lighter';
+    for(var f=0;f<flies.length;f++){
+      var p=flies[f];var fx=p.x+Math.sin(t*p.sp+p.ph)*40,fy=p.y+Math.cos(t*p.sp*1.3+p.ph)*24;
+      var a2=Math.max(0,Math.sin(t*1.6+p.ph*3));
+      var fg=ctx.createRadialGradient(fx,fy,0,fx,fy,9);fg.addColorStop(0,'rgba(220,255,140,'+(.85*a2).toFixed(2)+')');fg.addColorStop(1,'rgba(220,255,140,0)');
+      ctx.fillStyle=fg;ctx.fillRect(fx-9,fy-9,18,18);
+    }
+    ctx.globalCompositeOperation='source-over';
+  }
+  function loop(now){if(!running)return;draw(now);requestAnimationFrame(loop);}
+  build();draw(performance.now());
+  window.addEventListener('resize',function(){build();if(!running)draw(performance.now());});
+  if(!REDUCED)whenVisible(c,function(v){if(v&&!running){running=true;requestAnimationFrame(loop);}else if(!v)running=false;});
+})();
+
+/* ======================================================
+   Mapa da jornada (meridiano 52° O, em escala de latitude)
+   ====================================================== */
+var MAP=(function(){
+  var svg=document.getElementById('map');if(!svg)return null;
+  var NS='http://www.w3.org/2000/svg';
+  var top=-16.8,bot=-31.2,y0=40,y1=530,x=150;
+  function Y(lat){return y0+(top-lat)/(top-bot)*(y1-y0);}
+  function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
+  var mono='IBM Plex Mono, monospace',disp='Gloock, Georgia, serif';
+  var t=el('text',{x:x,y:18,'text-anchor':'middle','font-family':mono,'font-size':10,'letter-spacing':'1.5',fill:'var(--water)'});t.textContent='MERIDIANO 52° O';
+  for(var d=17;d<=31;d++){
+    var y=Y(-d),big=d%5===0;
+    el('line',{x1:x-(big?12:6),x2:x+(big?12:6),y1:y,y2:y,stroke:'var(--line)','stroke-width':1});
+    if(d%2===1){var tt=el('text',{x:x-22,y:y+3.5,'text-anchor':'end','font-family':mono,'font-size':9.5,fill:'var(--muted)'});tt.textContent=d+'° S';}
+  }
+  el('line',{x1:x,x2:x,y1:y0-10,y2:y1+10,stroke:'var(--line)','stroke-width':1.5});
+  var prog=el('line',{x1:x,x2:x,y1:Y(-28.46),y2:Y(-28.46),stroke:'var(--straw)','stroke-width':2.5,'stroke-linecap':'round',style:'transition:all 1s cubic-bezier(.2,.7,.1,1)'});
+  // divisa de estados (aprox.)
+  [[-22.2,'MS | PR'],[-27.2,'SC | RS']].forEach(function(b){
+    var yy=Y(b[0]);el('line',{x1:x-60,x2:x+150,y1:yy,y2:yy,stroke:'var(--line)','stroke-dasharray':'2 5'});
+    var bt=el('text',{x:x+150,y:yy-6,'text-anchor':'end','font-family':mono,'font-size':9,fill:'var(--muted)','letter-spacing':'1'});bt.textContent=b[1];
+  });
+  var places=[{id:'cds',n:'Chapadão do Sul',s:'MS',lat:-18.79,dy:4},{id:'nmt',n:'Não-Me-Toque',s:'RS · origem',lat:-28.46,dy:-6},{id:'cac',n:'Cachoeira do Sul',s:'RS · sede',lat:-30.04,dy:10}];
+  var nodes={};
+  places.forEach(function(p){
+    var y=Y(p.lat);var g=el('g',{style:'transition:opacity .6s'});
+    var halo=el('circle',{cx:x,cy:y,r:16,fill:'var(--straw)',opacity:0,style:'transition:opacity .6s'},g);
+    el('circle',{cx:x,cy:y,r:7,fill:'var(--bg)',stroke:'var(--ink)','stroke-width':2},g);
+    var core=el('circle',{cx:x,cy:y,r:3,fill:'var(--ink)'},g);
+    var a=el('text',{x:x+24,y:y+p.dy,'font-family':disp,'font-size':19,fill:'var(--ink)'},g);a.textContent=p.n;
+    var b=el('text',{x:x+24,y:y+p.dy+16,'font-family':mono,'font-size':9.5,fill:'var(--muted)'},g);b.textContent=p.s+' · '+Math.abs(p.lat).toFixed(2)+'° S';
+    nodes[p.id]={g:g,halo:halo,core:core,lat:p.lat};
+  });
+  var marker=el('circle',{cx:x,cy:Y(-28.46),r:5,fill:'var(--straw)',style:'transition:cy 1s cubic-bezier(.2,.7,.1,1)'});
+  var visited={nmt:true};
+  function set(lat,i){
+    var all=lat==='all';
+    var L=all?-28.46:parseFloat(lat);
+    if(!all)marker.setAttribute('cy',Y(L));
+    marker.setAttribute('opacity',all?0:1);
+    for(var k in nodes){var n=nodes[k];
+      if(!all&&Math.abs(n.lat-L)<.05)visited[k]=true;
+      var on=all||Math.abs(n.lat-L)<.05;
+      n.halo.setAttribute('opacity',on?.22:0);
+      n.g.style.opacity=(visited[k]||all)?1:.4;
+      n.core.setAttribute('fill',on?'var(--straw)':'var(--ink)');
+    }
+    var lats=Object.keys(visited).map(function(k){return nodes[k].lat;});
+    if(!all)lats.push(L);
+    var mn=Math.min.apply(null,lats),mx=Math.max.apply(null,lats);
+    if(all){mn=-30.04;mx=-18.79;}
+    prog.setAttribute('y1',Y(mx));prog.setAttribute('y2',Y(mn));
+  }
+  return {set:set};
+})();
+
+(function(){
+  var chs=[].slice.call(document.querySelectorAll('.ch'));
+  var num=document.getElementById('chNum'),place=document.getElementById('chPlace'),of=document.getElementById('chOf');
+  var cur=-1;
+  function activate(i){
+    if(i===cur)return;cur=i;
+    chs.forEach(function(c,j){c.classList.toggle('active',j===i);});
+    var c=chs[i];
+    num.textContent=String(i+1).padStart(2,'0');place.innerHTML=c.dataset.place;of.textContent=i+1;
+    if(MAP)MAP.set(c.dataset.lat,i);
+    var mn=document.getElementById('mNum');if(mn){mn.textContent=num.textContent;document.getElementById('mPlace').innerHTML=c.dataset.place;document.getElementById('mBar').style.width=((i+1)/chs.length*100)+'%';}
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)activate(chs.indexOf(e.target));});},{rootMargin:'-40% 0px -55% 0px'});
+    chs.forEach(function(c){io.observe(c);});
+  }
+  activate(0);
+})();
+
+/* ======================================================
+   Manifesto: palavras acendem com a rolagem
+   ====================================================== */
+(function(){
+  var p=document.getElementById('manifesto');if(!p)return;
+  var gold=(p.dataset.gold||'').split(',');
+  var words=p.textContent.trim().split(/\s+/);
+  p.innerHTML=words.map(function(w){var bare=w.replace(/[.,]/g,'');return '<span class="w'+(gold.indexOf(bare)>-1?' gold':'')+'">'+w+'</span>';}).join(' ');
+  var spans=[].slice.call(p.querySelectorAll('.w'));
+  if(REDUCED){spans.forEach(function(s){s.classList.add('on');});return;}
+  function upd(){
+    var r=p.getBoundingClientRect(),vh=window.innerHeight;
+    var prog=clamp((vh*.85-r.top)/(r.height+vh*.35),0,1);
+    var k=Math.round(prog*spans.length);
+    for(var i=0;i<spans.length;i++)spans[i].classList.toggle('on',i<k);
+  }
+  window.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();
+})();
+
+/* ======================================================
+   Ilustrações das atividades (SVG gerado)
+   ====================================================== */
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  function el(p,n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e;}
+  function grad(svg,id,stops,vert){
+    var d=svg.querySelector('defs')||el(svg,'defs',{});
+    var g=el(d,'linearGradient',{id:id,x1:0,y1:0,x2:vert?0:1,y2:vert?1:0});
+    stops.forEach(function(s){el(g,'stop',{offset:s[0],'stop-color':s[1]});});
+    return 'url(#'+id+')';
+  }
+  var art={
+    rice:function(s){
+      s.setAttribute('viewBox','0 0 400 500');s.setAttribute('preserveAspectRatio','xMidYMid slice');
+      el(s,'rect',{width:400,height:500,fill:grad(s,'rs',[[0,'#1d3a40'],[.5,'#d29a55'],[1,'#f3c983']],true)});
+      el(s,'circle',{cx:290,cy:205,r:26,fill:'#fff0c8'});
+      el(s,'path',{d:'M0 215 Q100 196 200 210 T400 204 V230 H0Z',fill:'#40503a',opacity:.85});
+      // quadros de arroz com água refletindo o céu
+      for(var i=0;i<9;i++){
+        var y=230+i*i*3.6+i*6,h=6+i*3.2;
+        el(s,'path',{d:'M0 '+y+' Q 120 '+(y-4-i)+' 200 '+(y+2)+' T 400 '+(y-2)+' V '+(y+h)+' H 0Z',fill:grad(s,'w'+i,[[0,'#f0c27c'],[1,'#7b8a7c']],true),opacity:.95});
+        var ry=y+h;
+        el(s,'path',{d:'M0 '+ry+' Q 120 '+(ry-4-i)+' 200 '+(ry+2)+' T 400 '+(ry-2),stroke:'#2e3b22','stroke-width':1+i*.5,fill:'none'});
+        var cnt=20+i*4;
+        for(var k=0;k<cnt;k++){var x=k*(400/cnt)+(i%2)*6;el(s,'line',{x1:x,y1:ry-1,x2:x+(i*.4),y2:ry-3-i*1.6,stroke:'#4f6a2c','stroke-width':.8+i*.25,'stroke-linecap':'round'});}
+      }
+    },
+    soy:function(s){
+      s.setAttribute('viewBox','0 0 400 500');s.setAttribute('preserveAspectRatio','xMidYMid slice');
+      el(s,'rect',{width:400,height:500,fill:grad(s,'ss',[[0,'#8fb3b6'],[.55,'#f2dca6'],[1,'#f6e2b2']],true)});
+      el(s,'path',{d:'M0 190 Q120 170 220 186 T400 176 V200 H0Z',fill:'#7b8a5c'});
+      el(s,'rect',{y:192,width:400,height:308,fill:grad(s,'sg',[[0,'#7a8a3a'],[1,'#2d3a18']],true)});
+      var vx=230,vy=188;
+      for(var i=-26;i<=26;i++){
+        var bx=200+i*34;
+        el(s,'line',{x1:vx,y1:vy,x2:bx,y2:520,stroke:'#3f5a1e','stroke-width':1.2,opacity:.9});
+        for(var k=1;k<16;k++){var tt=Math.pow(k/16,1.8);var x=lerp(vx,bx,tt),y=lerp(vy,520,tt);
+          if(x<-10||x>410)continue;
+          el(s,'circle',{cx:x,cy:y,r:.8+tt*7,fill:k%2?'#6f8f2c':'#86a83a',opacity:.95});}
+      }
+    },
+    cattle:function(s){
+      s.setAttribute('viewBox','0 0 400 500');s.setAttribute('preserveAspectRatio','xMidYMid slice');
+      el(s,'rect',{width:400,height:500,fill:grad(s,'cs',[[0,'#2c4a52'],[.6,'#e3a65f'],[1,'#f5cf8d']],true)});
+      el(s,'path',{d:'M0 260 Q90 228 190 248 T400 236 V500 H0Z',fill:'#6f7a46'});
+      el(s,'path',{d:'M0 300 Q120 270 250 296 T400 286 V500 H0Z',fill:grad(s,'cg',[[0,'#55602f'],[1,'#1f2814']],true)});
+      // umbu
+      el(s,'path',{d:'M305 262 q-4 -26 2 -44 M307 232 q-14 -8 -22 -20 M308 226 q12 -10 26 -14',stroke:'#1c2416','stroke-width':4,fill:'none','stroke-linecap':'round'});
+      [[290,206,22],[318,200,26],[302,190,20],[334,214,18],[280,218,15]].forEach(function(c){el(s,'circle',{cx:c[0],cy:c[1],r:c[2],fill:'#26331c'});});
+      // gado
+      [[70,318,1],[130,330,1.2],[210,312,.9],[250,350,1.5],[100,380,1.9],[330,330,1.1]].forEach(function(c){
+        var g=el(s,'g',{transform:'translate('+c[0]+' '+c[1]+') scale('+c[2]+')',fill:'#1a1c12'});
+        el(g,'ellipse',{cx:0,cy:0,rx:16,ry:8});
+        el(g,'path',{d:'M14 -4 l8 -3 l4 4 l-6 4 z'});
+        [-11,-6,6,11].forEach(function(lx){el(g,'rect',{x:lx-1.2,y:4,width:2.4,height:10});});
+      });
+    }
+  };
+  document.querySelectorAll('.art').forEach(function(a){
+    art[a.dataset.art](a.querySelector('svg'));
+    if(REDUCED)return;
+    a.addEventListener('pointermove',function(e){if(e.pointerType!=='mouse')return;var r=a.getBoundingClientRect();var px=(e.clientX-r.left)/r.width,py=(e.clientY-r.top)/r.height;
+      a.style.transform='rotateY('+((px-.5)*10).toFixed(2)+'deg) rotateX('+((.5-py)*8).toFixed(2)+'deg) translateZ(0)';
+      a.style.setProperty('--mx',(px*100)+'%');a.style.setProperty('--my',(py*100)+'%');});
+    a.addEventListener('pointerleave',function(){a.style.transform='';});
+  });
+})();
+
+/* ======================================================
+   Curvas de nível das fazendas (geradas por semente)
+   ====================================================== */
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  document.querySelectorAll('svg.topo').forEach(function(svg){
+    var seed=+svg.dataset.seed;function rnd(){seed=(seed*9301+49297)%233280;return seed/233280;}
+    svg.setAttribute('viewBox','0 0 120 84');
+    var cx=50+rnd()*20,cy=38+rnd()*8,f=[rnd()*6,rnd()*6,rnd()*6];
+    for(var k=6;k>=1;k--){
+      var d='';
+      for(var a=0;a<=64;a++){
+        var th=a/64*Math.PI*2;
+        var r=k*7*(1+.18*Math.sin(th*2+f[0])+.1*Math.sin(th*3+f[1]+k*.3)+.06*Math.sin(th*5+f[2]));
+        var x=cx+Math.cos(th)*r*1.25,y=cy+Math.sin(th)*r*.82;
+        d+=(a?'L':'M')+x.toFixed(1)+' '+y.toFixed(1);
+      }
+      var pth=document.createElementNS(NS,'path');
+      pth.setAttribute('d',d+'Z');pth.setAttribute('fill','none');
+      pth.setAttribute('stroke',k===1?'var(--straw)':'var(--muted)');
+      pth.setAttribute('stroke-width',k===1?1.6:.9);pth.setAttribute('opacity',k===1?1:.35+.1*(6-k));
+      svg.appendChild(pth);
+    }
+  });
+})();
+
+/* ======================================================
+   Fotos-placeholder: cenas pintadas em tom sépia
+   ====================================================== */
+(function(){
+  document.querySelectorAll('canvas[data-photo]').forEach(function(c){
+    var S=fitCanvas(c,2),g=S.ctx,W=S.w,H=S.h,k=c.dataset.photo;
+    var bg=g.createLinearGradient(0,0,0,H);bg.addColorStop(0,'#cdb88f');bg.addColorStop(1,'#8a7553');g.fillStyle=bg;g.fillRect(0,0,W,H);
+    g.fillStyle='#5b4a31';
+    var hz=H*.66;
+    g.beginPath();g.moveTo(0,H);g.lineTo(0,hz);g.quadraticCurveTo(W*.5,hz-H*.05,W,hz+4);g.lineTo(W,H);g.fill();
+    g.fillStyle='#3b2f1f';
+    if(k==='couple'){
+      [[.42,1],[.58,.94]].forEach(function(p){var x=W*p[0],s=H*.34*p[1];g.beginPath();g.arc(x,hz-s*.98,s*.13,0,6.283);g.fill();g.beginPath();g.moveTo(x-s*.17,hz+s*.05);g.quadraticCurveTo(x-s*.2,hz-s*.82,x,hz-s*.84);g.quadraticCurveTo(x+s*.2,hz-s*.82,x+s*.17,hz+s*.05);g.fill();});
+    }else if(k==='bus'){
+      var bx=W*.16,by=hz-H*.26,bw=W*.68,bh=H*.24;
+      g.beginPath();g.roundRect?g.roundRect(bx,by,bw,bh,8):g.rect(bx,by,bw,bh);g.fill();
+      g.fillStyle='#b9a37a';for(var i=0;i<5;i++)g.fillRect(bx+10+i*(bw-20)/5,by+8,(bw-20)/5-6,bh*.34);
+      g.fillStyle='#2a2116';[.22,.78].forEach(function(p){g.beginPath();g.arc(bx+bw*p,by+bh,bh*.2,0,6.283);g.fill();});
+    }else if(k==='tent'){
+      var tx=W*.5,ts=W*.28;g.beginPath();g.moveTo(tx-ts,hz+6);g.lineTo(tx,hz-ts*.9);g.lineTo(tx+ts,hz+6);g.closePath();g.fill();
+      g.fillStyle='#d9b26a';g.beginPath();g.moveTo(tx-ts*.18,hz+6);g.lineTo(tx,hz-ts*.5);g.lineTo(tx+ts*.18,hz+6);g.fill();
+      g.strokeStyle='#3b2f1f';g.lineWidth=3;g.beginPath();g.moveTo(W*.14,hz);g.quadraticCurveTo(W*.1,hz-H*.2,W*.2,hz-H*.3);g.stroke();
+      g.beginPath();g.arc(W*.2,hz-H*.32,H*.07,0,6.283);g.fill();
+    }else{
+      for(var r=0;r<14;r++){g.strokeStyle='rgba(59,47,31,'+(.25+r*.04)+')';g.lineWidth=1+r*.3;g.beginPath();g.moveTo(W*.5,hz-2);g.lineTo(W*(-.6+r*.16),H);g.stroke();}
+      [[.3,.9],[.44,.8],[.62,.6]].forEach(function(p){var x=W*p[0],s=H*.28*p[1];g.beginPath();g.arc(x,hz+H*.12-s*.98,s*.13,0,6.283);g.fill();g.fillRect(x-s*.12,hz+H*.12-s*.84,s*.24,s*.84);});
+    }
+    // grão de filme
+    var img=g.getImageData(0,0,c.width,c.height),d=img.data;
+    for(var j=0;j<d.length;j+=4){var n=(Math.random()-.5)*26;d[j]+=n;d[j+1]+=n;d[j+2]+=n;}
+    g.putImageData(img,0,0);
+    var v=g.createRadialGradient(W/2,H/2,W*.25,W/2,H/2,W*.75);v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,'rgba(30,20,10,.55)');g.fillStyle=v;g.fillRect(0,0,W,H);
+  });
+})();
+
+/* ======================================================
+   Revelações, linha das gerações, contadores, cabeçalho, parallax
+   ====================================================== */
+(function(){
+  var rv=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window&&!REDUCED){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    rv.forEach(function(r,i){r.style.transitionDelay=((i%4)*90)+'ms';io.observe(r);});
+  }else rv.forEach(function(r){r.classList.add('in');});
+
+  // linha da árvore
+  var line=document.getElementById('treeLine');
+  if(line&&!REDUCED){
+    line.style.strokeDasharray='1000';line.style.strokeDashoffset='0';
+    var tree=document.getElementById('tree');
+    var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){line.animate([{strokeDashoffset:1000},{strokeDashoffset:0}],{duration:1800,easing:'cubic-bezier(.2,.7,.1,1)'});io2.disconnect();}});},{threshold:.4});
+    io2.observe(tree);
+  }
+
+  // contadores
+  document.querySelectorAll('[data-count]').forEach(function(b){
+    if(REDUCED)return;
+    var target=+b.dataset.count,small=b.querySelector('small');var smallHTML=small?small.outerHTML:'';
+    var io3=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io3.disconnect();
+      var t0=performance.now();
+      (function step(now){var p=clamp((now-t0)/1600,0,1);p=1-Math.pow(1-p,4);
+        b.innerHTML=Math.round(target*p).toLocaleString('pt-BR')+smallHTML;if(p<1)requestAnimationFrame(step);})(t0);
+    });},{threshold:.6});
+    io3.observe(b);
+  });
+
+  // cabeçalho
+  var fl=document.querySelector('.float'),top=document.getElementById('top'),hero=document.getElementById('inicio'),copy=document.getElementById('heroCopy');
+  function onScroll(){
+    var y=window.scrollY,h=hero.offsetHeight;
+    top.classList.toggle('solid',y>h-90);fl.classList.toggle('show',y>h*.8);
+    if(!REDUCED&&y<h){copy.style.transform='translateY('+(y*.28).toFixed(1)+'px)';copy.style.opacity=(1-y/(h*.85)).toFixed(3);}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // copiar
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var n=document.getElementById(btn.dataset.copy);var txt=n.textContent.trim();
+      function done(){btn.textContent='Copiado';setTimeout(function(){btn.textContent='Copiar';},1600);}
+      function sel(){var r=document.createRange();r.selectNodeContents(n);var s=getSelection();s.removeAllRanges();s.addRange(r);}
+      try{navigator.clipboard.writeText(txt).then(done,sel);}catch(e){sel();}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
